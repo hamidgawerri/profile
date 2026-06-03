@@ -11,112 +11,91 @@
 
 body {
     margin: 0;
-    font-family: 'Cairo', Arial, sans-serif;
-    background: linear-gradient(135deg, #0b1220, #111827);
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #0a0a0f, #1a0025);
     color: white;
 }
 
 /* HEADER */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    padding: 50px 20px;
-    flex-wrap: wrap;
+    text-align: center;
+    padding: 60px 20px 30px;
 }
 
-/* PROFILE IMAGE */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid #38bdf8;
-    object-fit: cover;
-    transition: 0.4s;
-}
-
-.profile-pic:hover {
-    transform: scale(1.08);
-}
-
-/* NAME */
-.name-box h1 {
+h1 {
     margin: 5px 0;
-    color: #38bdf8;
+    color: #f5c542;
 }
 
 .subtitle {
-    color: #94a3b8;
+    color: #c7c7c7;
 }
 
-/* CONTACT CARDS */
-.contact-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 20px;
-}
-
-.contact-card {
-    background: #1e293b;
-    padding: 12px 15px;
-    border-radius: 12px;
-    text-decoration: none;
-    color: white;
-    min-width: 250px;
-    transition: 0.3s;
-    border: 1px solid #334155;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px);
-    border-color: #38bdf8;
-}
-
-/* CONTAINER */
+/* CARDS */
 .container {
     width: 90%;
     margin: auto;
 }
 
-/* CARD */
 .card {
-    background: #1e293b;
-    padding: 18px;
-    margin: 18px 0;
-    border-radius: 14px;
-    border: 1px solid #334155;
+    background: rgba(255,255,255,0.04);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: #38bdf8;
+    border-color: #f5c542;
 }
 
 h2 {
-    color: #60a5fa;
+    color: #f5c542;
 }
 
-/* LIST */
-ul {
+p, li {
     line-height: 1.8;
+}
+
+/* CONTACT */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 14px;
+    min-width: 250px;
+    border: 1px solid rgba(245, 197, 66, 0.2);
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    border-color: #f5c542;
 }
 
 /* FOOTER */
 .footer {
     text-align: center;
     padding: 25px;
-    color: #94a3b8;
+    color: #999;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .header {
+    .contact-container {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 }
 
@@ -129,18 +108,14 @@ ul {
 <!-- HEADER -->
 <div class="header">
 
-<img class="profile-pic" src="profile.jpg" alt="Profile">
-
-<div class="name-box">
-
 <h1>عبد الحميد خالد القويري</h1>
 <h1>Abdulhamid Khaled Gawerri</h1>
 
 <p class="subtitle">
+من الاهتمامات | Of interests<br>
+الأمن السيبراني • التصميم • صناعة المحتوى • التكنولوجيا<br>
 Cybersecurity • Design • Content Creation • Technology
 </p>
-
-</div>
 
 </div>
 
@@ -148,18 +123,15 @@ Cybersecurity • Design • Content Creation • Technology
 <div class="contact-container">
 
 <a class="contact-card" href="https://www.instagram.com/libico_08" target="_blank">
-📸 Instagram<br>
-<small>@libico_08</small>
+📸 Instagram<br>@libico_08
 </a>
 
 <a class="contact-card" href="https://www.facebook.com/share/1EpWePtAge/" target="_blank">
-📘 Facebook<br>
-<small>Hamid Khaled</small>
+📘 Facebook<br>Hamid Khaled
 </a>
 
 <a class="contact-card" href="mailto:hamidalqwery47@gmail.com">
-📧 Email<br>
-<small>hamidalqwery47@gmail.com</small>
+📧 Email<br>hamidalqwery47@gmail.com
 </a>
 
 </div>
@@ -171,11 +143,11 @@ Cybersecurity • Design • Content Creation • Technology
 <h2>نبذة عني | About Me</h2>
 
 <p>
-أنا طالب ثانوي مهتم بالأمن السيبراني والتكنولوجيا والتصميم وصناعة المحتوى.
+أنا طالب ثانوي مهتم بالامن السيبراني,البرمجة,والتكنولوجيا,واسعى لتطوير مهاراتي في هذا المجال
 </p>
 
 <p>
-I am a secondary school student passionate about Cybersecurity, Technology, Design and Content Creation.
+I am a high school student interested in Cybersecurity,Programming,and Technology,and I aim to develop my skills in this field
 </p>
 </div>
 
@@ -184,13 +156,36 @@ I am a secondary school student passionate about Cybersecurity, Technology, Desi
 <h2>المهارات | Skills</h2>
 
 <ul>
-<li>الأمن السيبراني | Cybersecurity</li>
-<li>التصميم الجرافيكي | Graphic Design</li>
-<li>مونتاج الفيديو | Video Editing</li>
-<li>مهارات الحاسوب | Computer Skills</li>
-<li>حل المشكلات التقنية | Technical Problem Solving</li>
-<li>التعلم الذاتي | Self Learning</li>
+<li>
+الأمن السيبراني: فهم أساسيات الحماية الرقمية وتحليل التهديدات<br>
+Cybersecurity: Understanding digital security basics and threats analysis
+</li>
+
+<li>
+Photoshop,Canva and CapCut التصميم:استخدام ادوات التصميم مثل   <br>
+Design: Using design tools such as Photoshop,Canva, and CapCut
+</li>
+
+<li>
+المونتاج: تحرير الفيديو وصناعة المحتوى<br>
+Video Editing: Editing videos and creating content
+</li>
+
+<li>
+حل المشكلات التقنية ودعم الآخرين<br>
+Technical problem solving and helping others
+</li>
+
+<li>
+التعلم الذاتي وتطوير المهارات باستمرار<br>
+Self-learning and continuous improvement
+</li>
+
+<li>
+التأقلم والتكيف السريع<br>
+Rapid adaptation and adjustment
 </ul>
+
 </div>
 
 <!-- EXPERIENCE -->
@@ -198,10 +193,22 @@ I am a secondary school student passionate about Cybersecurity, Technology, Desi
 <h2>الخبرات | Experience</h2>
 
 <ul>
-<li>إدارة خدمات رقمية في منصات الألعاب | Digital services management in gaming platforms</li>
-<li>متجر خدمات ألعاب إلكترونية | Online gaming services store</li>
-<li>حل مشاكل تقنية للعائلة والأصدقاء | Technical support for family and friends</li>
+<li>
+إدارة خدمات رقمية في منصات الألعاب<br>
+Digital services management in gaming platforms
+</li>
+
+<li>
+تجربة في العمل الرقمي والتجارة الإلكترونية<br>
+Experience in digital work and online services
+</li>
+
+<li>
+مساعدة العائلة والأصدقاء في المشاكل التقنية<br>
+Technical support for family and friends
+</li>
 </ul>
+
 </div>
 
 <!-- LANGUAGES -->
@@ -209,21 +216,55 @@ I am a secondary school student passionate about Cybersecurity, Technology, Desi
 <h2>اللغات | Languages</h2>
 
 <ul>
-<li>العربية | Arabic (Native)</li>
-<li>الإنجليزية | English (Basic to Intermediate)</li>
-<li>الإسبانية | Spanish (Basic)</li>
+<li>
+العربية: اللغة الأم<br>
+Arabic: Native language
+</li>
+
+<li>
+الإنجليزية: مستوى متوسط<br>
+English: Intermediate level
+</li>
+
+<li>
+الإسبانية: أساسيات<br>
+Spanish: Basic level
+</li>
 </ul>
+
 </div>
 
-<!-- ACHIEVEMENTS -->
+<!-- INTERESTS -->
 <div class="card">
-<h2>الإنجازات | Achievements</h2>
+<h2>أبرز الاهتمامات | Interests</h2>
 
 <ul>
-<li>المركز الأول في مسابقة الخط | First Place in Handwriting Competition</li>
-<li>تكريم حسن السلوك | Good Conduct Recognition</li>
-<li>أنشطة مدرسية بيئية | School Environmental Activities</li>
+<li>
+الأمن السيبراني وحماية الأنظمة<br>
+Cybersecurity and system protection
+</li>
+
+<li>
+تعلم البرمجة وتطوير المهارات التقنية<br>
+Learning programming and improving technical skills
+</li>
+
+<li>
+التصميم وصناعة المحتوى الرقمي<br>
+Design and digital content creation
+</li>
+
+<li>
+التكنولوجيا واستكشاف الأدوات الحديثة<br>
+Technology and exploring modern tools
+</li>
+
+<li>
+تطوير الذات وبناء مستقبل مهني قوي<br>
+Self-development and building a strong career
+</li>
 </ul>
+
 </div>
 
 <!-- GOALS -->
@@ -231,19 +272,18 @@ I am a secondary school student passionate about Cybersecurity, Technology, Desi
 <h2>الأهداف | Goals</h2>
 
 <p>
-هدفي دراسة الأمن السيبراني والعمل في المجال التقني وبناء مستقبل مهني ناجح.
+هدفي دراسة الأمن السيبراني وبناء مستقبل قوي في المجال التقني.
 </p>
 
 <p>
-My goal is to study Cybersecurity and build a successful career in technology.
+My goal is to study Cybersecurity and build a strong future in technology.
 </p>
-
 </div>
 
 </div>
 
 <div class="footer">
-© Abdulhamid Portfolio
+© 2026 Abdulhamid Portfolio
 </div>
 
 </body>
