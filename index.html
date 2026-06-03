@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdulhamid Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Cairo', Arial, sans-serif;
+    background: linear-gradient(135deg, #0b1220, #111827);
+    color: white;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+/* PROFILE IMAGE */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.08);
+}
+
+/* NAME */
+.name-box h1 {
+    margin: 5px 0;
+    color: #38bdf8;
+}
+
+.subtitle {
+    color: #94a3b8;
+}
+
+/* CONTACT CARDS */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px;
+}
+
+.contact-card {
+    background: #1e293b;
+    padding: 12px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    min-width: 250px;
+    transition: 0.3s;
+    border: 1px solid #334155;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    background: #1e293b;
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 14px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+h2 {
+    color: #60a5fa;
+}
+
+/* LIST */
+ul {
+    line-height: 1.8;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+
+<img class="profile-pic" src="profile.jpg" alt="Profile">
+
+<div class="name-box">
+
+<h1>عبد الحميد خالد القويري</h1>
+<h1>Abdulhamid Khaled Gawerri</h1>
+
+<p class="subtitle">
+Cybersecurity • Design • Content Creation • Technology
+</p>
+
+</div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="contact-container">
+
+<a class="contact-card" href="https://www.instagram.com/libico_08" target="_blank">
+📸 Instagram<br>
+<small>@libico_08</small>
+</a>
+
+<a class="contact-card" href="https://www.facebook.com/share/1EpWePtAge/" target="_blank">
+📘 Facebook<br>
+<small>Hamid Khaled</small>
+</a>
+
+<a class="contact-card" href="mailto:hamidalqwery47@gmail.com">
+📧 Email<br>
+<small>hamidalqwery47@gmail.com</small>
+</a>
+
+</div>
+
+<div class="container">
+
+<!-- ABOUT -->
+<div class="card">
+<h2>نبذة عني | About Me</h2>
+
+<p>
+أنا طالب ثانوي مهتم بالأمن السيبراني والتكنولوجيا والتصميم وصناعة المحتوى.
+</p>
+
+<p>
+I am a secondary school student passionate about Cybersecurity, Technology, Design and Content Creation.
+</p>
+</div>
+
+<!-- SKILLS -->
+<div class="card">
+<h2>المهارات | Skills</h2>
+
+<ul>
+<li>الأمن السيبراني | Cybersecurity</li>
+<li>التصميم الجرافيكي | Graphic Design</li>
+<li>مونتاج الفيديو | Video Editing</li>
+<li>مهارات الحاسوب | Computer Skills</li>
+<li>حل المشكلات التقنية | Technical Problem Solving</li>
+<li>التعلم الذاتي | Self Learning</li>
+</ul>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="card">
+<h2>الخبرات | Experience</h2>
+
+<ul>
+<li>إدارة خدمات رقمية في منصات الألعاب | Digital services management in gaming platforms</li>
+<li>متجر خدمات ألعاب إلكترونية | Online gaming services store</li>
+<li>حل مشاكل تقنية للعائلة والأصدقاء | Technical support for family and friends</li>
+</ul>
+</div>
+
+<!-- LANGUAGES -->
+<div class="card">
+<h2>اللغات | Languages</h2>
+
+<ul>
+<li>العربية | Arabic (Native)</li>
+<li>الإنجليزية | English (Basic to Intermediate)</li>
+<li>الإسبانية | Spanish (Basic)</li>
+</ul>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<div class="card">
+<h2>الإنجازات | Achievements</h2>
+
+<ul>
+<li>المركز الأول في مسابقة الخط | First Place in Handwriting Competition</li>
+<li>تكريم حسن السلوك | Good Conduct Recognition</li>
+<li>أنشطة مدرسية بيئية | School Environmental Activities</li>
+</ul>
+</div>
+
+<!-- GOALS -->
+<div class="card">
+<h2>الأهداف | Goals</h2>
+
+<p>
+هدفي دراسة الأمن السيبراني والعمل في المجال التقني وبناء مستقبل مهني ناجح.
+</p>
+
+<p>
+My goal is to study Cybersecurity and build a successful career in technology.
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+© Abdulhamid Portfolio
+</div>
+
+</body>
+</html>
